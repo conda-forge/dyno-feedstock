@@ -10,7 +10,7 @@ source:
   sha256: 8f2a227e4839a48f37c06b175907f84d0e4b27885cc0c80cd92795ea117f6ff3
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: python -m pip install . --no-deps -vv
 
@@ -29,8 +29,7 @@ requirements:
     - typing_extensions
     - plotly
     - scipy
-    - if: unix
-      then: dynare-preprocessor-pylib
+    - dynare-preprocessor-pylib
 
 tests:
   - python:
