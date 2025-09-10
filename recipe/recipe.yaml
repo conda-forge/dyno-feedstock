@@ -29,7 +29,8 @@ requirements:
     - typing_extensions
     - plotly
     - scipy
-    - dynare-preprocessor-pylib
+    - if: unix
+      then: dynare-preprocessor-pylib
 
 tests:
   - python:
