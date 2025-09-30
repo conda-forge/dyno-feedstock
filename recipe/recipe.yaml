@@ -1,5 +1,5 @@
 context:
-  version: "0.1.5"
+  version: "0.1.6"
 
 package:
   name: dyno
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/EconForge/dyno.py/archive/v${{ version }}.tar.gz
-  sha256: 8f2a227e4839a48f37c06b175907f84d0e4b27885cc0c80cd92795ea117f6ff3
+  sha256: 19f465f1f92b290002abdc45ea5b6d6be3cdd21ed10f98233bda26b1781c3809
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: python -m pip install . --no-deps -vv
 
@@ -26,6 +26,10 @@ requirements:
     - dolang
     - numpy
     - pandas
+    - interegular
+    - sympy
+    - altair
+    - rich
     - typing_extensions
     - plotly
     - scipy
@@ -36,8 +40,7 @@ tests:
       python_version: ${{ python_min }}.*
       imports:
         - dyno
-        - dyno.modfile_lark
-
+        
 about:
   homepage: https://github.com/EconForge/dyno.py
   summary: A simple library for solving dynamic stochastic economic models.
