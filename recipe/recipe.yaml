@@ -1,5 +1,6 @@
 context:
   version: "0.1.7.3"
+  python_min: "3.12"
 
 package:
   name: dyno
@@ -17,12 +18,12 @@ build:
 requirements:
 
   host:
-    - python 3.12
+    - python ${{ python_min }}.*
     - hatchling
     - pip
 
   run:
-    - python >=3.12
+    - python >=${{ python_min }}
     - numpy
     - pandas
     - pyyaml
@@ -40,7 +41,7 @@ requirements:
 
 tests:
   - python:
-      python_version: 3.12
+      python_version: ${{ python_min }}.*
       imports:
         - dyno
         
