@@ -17,12 +17,12 @@ build:
 requirements:
 
   host:
-    - python ${{ python_min }}.*
+    - python 3.12
     - hatchling
     - pip
 
   run:
-    - python >=${{ python_min }}
+    - python >=3.12
     - numpy
     - pandas
     - pyyaml
@@ -40,7 +40,7 @@ requirements:
 
 tests:
   - python:
-      python_version: ${{ python_min }}.*
+      python_version: 3.12
       imports:
         - dyno
         
