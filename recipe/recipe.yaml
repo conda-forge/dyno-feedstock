@@ -46,7 +46,7 @@ tests:
         - "3.13.*"
       imports:
         - dyno
-        
+
 about:
   homepage: https://github.com/EconForge/dyno.py
   summary: A simple library for solving dynamic stochastic economic models.
