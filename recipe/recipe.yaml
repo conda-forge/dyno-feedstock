@@ -1,5 +1,5 @@
 context:
-  version: "0.1.10"
+  version: "0.1.12"
   python_min: "3.12"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/dyno.py/archive/v${{ version }}.tar.gz
-  sha256: 8ac5996960ef8be3765efe29ecb26526892d32352cb89d576f4f0430b8757926
+  sha256: 4646d41110eb1d59b90a608190fc70a8f94fabbbeea95409810eac480a9a05b2
 
 build:
   number: 0
@@ -24,20 +24,20 @@ requirements:
 
   run:
     - python >=${{ python_min }}
-    - altair >=6.0.0,<7
+    - altair >=5.0.0,<7
     - interegular >=0.3.3,<0.4
-    - lark >=1.3.1,<2
-    - numpy >=2.4.2,<3
-    - pandas >=3.0.0,<4
-    - plotly >=6.5.2,<7
+    - lark >=1.1.7,<2
+    - markdown-it-py >=3.0.0,<5
+    - mdit-py-plugins >=0.4.0,<1
+    - numpy >=1.26.0,<3
+    - pandas >=2.1.1,<4
+    - plotext >=5.3.2,<6
     - pyyaml >=6.0,<7
-    - rich >=14.3.2,<15
-    - scipy >=1.17.0,<2
-    - sympy >=1.14.0,<2
+    - rich >=13.0.0,<15
+    - scipy >=1.11.3,<2
     - tempita >=0.6.0,<0.7
-    - typing_extensions >=4.15.0,<5
+    - typing_extensions >=4.6.0,<5
     - dynare-preprocessor-pylib
-    - vega_datasets
 
 tests:
   - python:
