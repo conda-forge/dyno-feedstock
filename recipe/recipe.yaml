@@ -1,5 +1,5 @@
 context:
-  version: "0.1.12"
+  version: "0.1.13"
   python_min: "3.12"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/dyno.py/archive/v${{ version }}.tar.gz
-  sha256: 4646d41110eb1d59b90a608190fc70a8f94fabbbeea95409810eac480a9a05b2
+  sha256: dc0f18a6a4b5a099dfc4507d8a74183b537772a4e97657bfdc2e0a5c076a8ba7
 
 build:
   number: 0
