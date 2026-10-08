@@ -1,5 +1,5 @@
 context:
-  version: "0.1.13"
+  version: "0.1.14"
   python_min: "3.12"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/dyno.py/archive/v${{ version }}.tar.gz
-  sha256: dc0f18a6a4b5a099dfc4507d8a74183b537772a4e97657bfdc2e0a5c076a8ba7
+  sha256: 12fe9c156a28b8214e58b90ad69a8bfbabcd7b4bc6555d9ae2366dc3cc85dc9e
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
 
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }},<3.15
     - altair >=5.0.0,<7
     - interegular >=0.3.3,<0.4
     - lark >=1.1.7,<2
@@ -44,6 +44,7 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "3.13.*"
+        - "3.14.*"
       imports:
         - dyno
         
